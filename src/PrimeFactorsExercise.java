@@ -1,8 +1,5 @@
 import java.util.ArrayList;
 
-/**
- * Created by craphael on 7/22/15.
- */
 public class PrimeFactorsExercise {
 
     public static void main(String args[]){
@@ -41,7 +38,6 @@ public class PrimeFactorsExercise {
                 buffer.append(".");
             }
         }
-
         System.out.println(buffer);
     }
 }

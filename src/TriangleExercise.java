@@ -1,6 +1,4 @@
-/**
- * Created by craphael on 7/22/15.
- */
+
 public class TriangleExercise {
 
     public static final String SYMBOL = "*";
@@ -44,7 +42,7 @@ public class TriangleExercise {
         }
     }
     
-    public void drawARightTriangle(int numberOfAsterisks){
+    public void drawARightTriangle(int numberOfAsterisks) {
         for (int i = 0; i < numberOfAsterisks; i++) {
             for (int j = 0; j < i; j++) {
                 print();

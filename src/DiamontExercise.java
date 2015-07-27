@@ -1,6 +1,4 @@
-/**
- * Created by craphael on 7/22/15.
- */
+
 public class DiamontExercise {
 
     public static final String SYMBOL = "*";
@@ -44,8 +42,8 @@ public class DiamontExercise {
         int startRangeSymbols = numberOfSymbols;
         int endRangeSymbols = numberOfSymbols;
 
-        for (int i = 0; i < numberOfSymbols - 1; i++) {
-            drawDiamontLine(numberOfSymbols + delta, startRangeSymbols, endRangeSymbols);
+        for (int i = 0; i < delta; i++) {
+            drawALine(numberOfSymbols + delta, startRangeSymbols, endRangeSymbols);
             startRangeSymbols--;
             endRangeSymbols++;
         }
@@ -57,7 +55,7 @@ public class DiamontExercise {
         int endRangeSymbols = numberOfSymbols + delta - 1;
 
         for (int i = 1; i < numberOfSymbols; i++) {
-            drawDiamontLine(numberOfSymbols + delta, startRangeSymbols, endRangeSymbols);
+            drawALine(numberOfSymbols + delta, startRangeSymbols, endRangeSymbols);
             startRangeSymbols++;
             endRangeSymbols--;
         }
@@ -66,10 +64,10 @@ public class DiamontExercise {
     private void drawTheBase(int numberOfSymbols) {
         int delta = numberOfSymbols - 1;
         int numberOfSymbolsPerLine = numberOfSymbols + delta;
-        drawDiamontLine(numberOfSymbolsPerLine, 0, numberOfSymbolsPerLine);
+        drawALine(numberOfSymbolsPerLine, 0, numberOfSymbolsPerLine);
     }
 
-    private void drawDiamontLine(int numberOfSymbolsPerLine, int startRangeSymbols, int endRangeSymbols) {
+    private void drawALine(int numberOfSymbolsPerLine, int startRangeSymbols, int endRangeSymbols) {
         for (int j = 1; j <= numberOfSymbolsPerLine; j++) {
             if (isOutOfRange(startRangeSymbols, endRangeSymbols, j)) {
                 print(" ");

@@ -1,6 +1,4 @@
-/**
- * Created by craphael on 7/22/15.
- */
+
 public class FizzBuzzExercise {
 
     public static void main(String[] args){
